@@ -7,12 +7,12 @@ fun main() {
     var moveNumber = 1
 
 
-    println("$from-$to;$moveNumber")
+    println("[$from-$to;$moveNumber]")
 
     from = "D2"
     to = "D3"
     moveNumber = 2
 
-    println("$from-$to;$moveNumber")
+    println("[$from-$to;$moveNumber]")
 
 }
