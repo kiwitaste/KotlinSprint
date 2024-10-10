@@ -2,10 +2,6 @@ package sprintlesson_4
 
 fun main() {
 
-    val weightMin = 35
-    val weightMax = 100
-    val volumeMax = 100
-
     val weightGood1 = 20
     val volumeGood1 = 80
 
@@ -13,9 +9,13 @@ fun main() {
     val volumeGood2 = 100
 
     println("Груз с весом $weightGood1 кг и объемом $volumeGood1 л соответствует категории 'Average': " +
-            "${weightMin < weightGood1 && weightGood1 <= weightMax && volumeGood1 < volumeMax}")
+            "${WEIGHT_MIN < weightGood1 && weightGood1 <= WEIGHT_MAX && volumeGood1 < VOLUME_MAX}")
 
     println("Груз с весом $weightGood2 кг и объемом $volumeGood2 л соответствует категории 'Average': " +
-            "${weightMin < weightGood2 && weightGood2 <= weightMax && volumeGood2 < volumeMax}")
+            "${WEIGHT_MIN < weightGood2 && weightGood2 <= WEIGHT_MAX && volumeGood2 < VOLUME_MAX}")
 
 }
+
+const val WEIGHT_MIN = 35
+const val WEIGHT_MAX = 100
+const val VOLUME_MAX = 100
